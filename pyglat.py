@@ -12,7 +12,7 @@ class PyGlatinForm(Ui_pyglatin):        # наследование класса
         self.pushButton.clicked.connect(self.push)
 
     def push(self):
-        text1 = self.lineEdit.text()
+        text1 = self.textEdit.toPlainText()
         pyg = random.choice ('абвгдеёжзийклмнопрстуфчцчшщцэюя')
         word_split = text1.split()
         for i in word_split:
