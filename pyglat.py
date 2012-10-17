@@ -13,10 +13,10 @@ class PyGlatinForm(Ui_pyglatin):        # наследование класса
 
     def push(self):
         text1 = self.textEdit.toPlainText()
-        pyg = random.choice ('абвгдеёжзийклмнопрстуфчцчшщцэюя')
         word_split = text1.split()
         for i in word_split:
             first = i[:1]
+            pug = random.choice ('абвгдеёжзийклмнопрстуфчцчшщцэюя')
             new_word = i[1:]
             k = new_word + first + pyg
             self.textEdit_2.insertPlainText(k+' ')
