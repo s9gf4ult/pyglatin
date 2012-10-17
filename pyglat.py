@@ -6,7 +6,7 @@ from PySide import QtGui
 from ui_pyglatin import Ui_pyglatin
 
 class PyGlatinForm(Ui_pyglatin):        # наследование класса   
-       
+
     def setupUi(self, pyglatin):
         super(PyGlatinForm, self).setupUi(pyglatin)
         self.pushButton.clicked.connect(self.push)
@@ -18,15 +18,13 @@ class PyGlatinForm(Ui_pyglatin):        # наследование класса
         for i in word_split:
             first = i[:1]
             new_word = i[1:]
-            k = new_word + first + pyg            
+            k = new_word + first + pyg
             self.textEdit_2.insertPlainText(k+' ')
-            
+
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     Form = QtGui.QMainWindow()
-    ui = PyGlatinForm()           
+    ui = PyGlatinForm()
     ui.setupUi(Form)
     Form.show()
     sys.argv(app.exec_())
-    
-    
