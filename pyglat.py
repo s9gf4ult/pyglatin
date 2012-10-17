@@ -15,8 +15,8 @@ class PyGlatinForm(Ui_pyglatin):        # наследование класса
         text1 = self.textEdit.toPlainText()
         word_split = text1.split()
         for i in word_split:
+            pyg = random.choice ('абвгдеёжзийклмнопрстуфчцчшщцэюя')
             first = i[:1]
-            pug = random.choice ('абвгдеёжзийклмнопрстуфчцчшщцэюя')
             new_word = i[1:]
             k = new_word + first + pyg
             self.textEdit_2.insertPlainText(k+' ')
