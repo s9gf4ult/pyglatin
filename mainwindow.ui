@@ -23,6 +23,9 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
     <property name="text">
      <string>PushButton</string>
     </property>
@@ -45,6 +48,9 @@
       <width>301</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
     </property>
    </widget>
   </widget>

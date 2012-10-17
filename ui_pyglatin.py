@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'mainwindow.ui'
 #
-# Created: Wed Oct 17 11:27:49 2012
+# Created: Wed Oct 17 11:56:20 2012
 #      by: pyside-uic 0.2.14 running on PySide 1.1.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,12 +17,14 @@ class Ui_pyglatin(object):
         self.centralWidget.setObjectName("centralWidget")
         self.pushButton = QtGui.QPushButton(self.centralWidget)
         self.pushButton.setGeometry(QtCore.QRect(130, 200, 83, 25))
+        self.pushButton.setFocusPolicy(QtCore.Qt.WheelFocus)
         self.pushButton.setObjectName("pushButton")
         self.textEdit_2 = QtGui.QTextEdit(self.centralWidget)
         self.textEdit_2.setGeometry(QtCore.QRect(10, 100, 301, 81))
         self.textEdit_2.setObjectName("textEdit_2")
         self.textEdit = QtGui.QTextEdit(self.centralWidget)
         self.textEdit.setGeometry(QtCore.QRect(10, 10, 301, 71))
+        self.textEdit.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textEdit.setObjectName("textEdit")
         pyglatin.setCentralWidget(self.centralWidget)
         self.menuBar = QtGui.QMenuBar(pyglatin)
