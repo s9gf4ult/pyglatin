@@ -27,4 +27,5 @@ if __name__ == "__main__":
     ui = PyGlatinForm()
     ui.setupUi(Form)
     Form.show()
-    sys.argv(app.exec_())
+    app.exec_()
+    sys.exit()
